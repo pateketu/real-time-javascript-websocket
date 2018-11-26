@@ -21,7 +21,7 @@ Once you've started the development server, navigate to http://localhost:8011
 
 ## Impl Details
 
-- Approach is to first create a blank table for each unique currency pair  and then when we receive update for currency we popoulate the table with correct sorted       data, this avoids the heavy ** createElement ** calls on every update and we get a fast updating UI 
+- Approach is to first create a blank table for each unique currency pair  and then when we receive update for currency we popoulate the table with correct sorted       data, this avoids the heavy **createElement** calls on every update and we get a fast updating UI 
 - For updating the Sparklines instead of using JavaSscript's timeout and getting into all sorts of issues when updating the HTML table, approach is to track the time    in the LiveFx controller and if 30 secs have elapsed then sparklines are updated first and then the table is sorted.
 
 ## Screen
