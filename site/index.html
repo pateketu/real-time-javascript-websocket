@@ -1,0 +1,30 @@
+<html>
+<head>
+    <!--
+    This is the library that provides websocket streaming pub/sub
+    The dev serverver is serving the html and javascript, but it also provides updating fx data on /fx/prices.
+     -->
+    <script src="stomp.js"></script>
+    <script src="sparkline.js"></script>
+</head>
+<body>
+
+<section class="content">
+    <h1>Live Fx Rates</h1>
+
+
+    <table id="liveFxRates" class="liveFxTable">
+        <th>Name</th>
+        <th>Current Best Bid Price</th>
+        <th>Current Best Ask Price</th>
+        <th>Last Bid Change</th>
+        <th>Last Ask Price Change</th>
+        <th>Mid-Price over 30 Seconds</th>
+    </table>
+
+
+</section>
+<script src="bundle.js"></script>
+
+</body>
+</html>
